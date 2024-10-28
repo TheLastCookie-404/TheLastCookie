@@ -1,7 +1,7 @@
 <template>
   <div>
     <div v-show="btnState" class="bg-red-600">Hello</div>
-    <button @click="btnState = !btnState" class="btn">Button</button>
+    <button class="btn" @click="btnState = !btnState">Button</button>
   </div>
 </template>
 
