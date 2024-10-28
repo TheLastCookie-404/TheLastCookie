@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div v-show="btnState">Hello</div>
+    <div v-show="btnState" class="bg-red-600">Hello</div>
     <button @click="btnState = !btnState" class="btn">Button</button>
   </div>
 </template>
