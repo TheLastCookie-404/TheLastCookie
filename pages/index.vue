@@ -1,8 +1,3 @@
-<script setup lang="ts">
-  // import { TresCanvas } from "@tresjs/core";
-  // import { OrbitControls } from "@tresjs/cientos";
-</script>
-
 <template>
   <div class="h-[80vh]">
     <TresCanvas clear-color="#82DBC5">
@@ -24,6 +19,11 @@
     </TresCanvas>
   </div>
 </template>
+
+<script setup lang="ts">
+  // import { TresCanvas } from "@tresjs/core";
+  // import { OrbitControls } from "@tresjs/cientos";
+</script>
 
 <style>
   html,
