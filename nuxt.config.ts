@@ -13,7 +13,13 @@ export default defineNuxtConfig({
     "nuxt-swiper",
     "@vueuse/nuxt",
     "@tresjs/nuxt",
+    "@nuxthub/core",
   ],
+  nitro: {
+    alias: {
+      pinia: "pinia",
+    },
+  },
   vite: {
     plugins: [tailwindcss()],
   },
