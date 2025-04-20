@@ -4,10 +4,11 @@
       <TresPerspectiveCamera :position="[2, 2, 2]" :look-at="[0, 0, 0]" />
       <OrbitControls />
       <Suspense>
-        <Model :scale="0.005" />
+        <!-- <Car :scale="0.005" /> -->
+        <Turtle :position="[0, -0.2, 0]" />
       </Suspense>
       <TresMesh :position="[0, 3, 0]" :rotation="[0, Math.PI, 0]" cast-shadow>
-        <TresConeGeometry :args="[1, 1.5, 3]" />
+        <!-- <TresConeGeometry :args="[1, 1.5, 3]" /> -->
         <TresMeshToonMaterial color="#82DBC5" />
       </TresMesh>
       <TresMesh :position="[0, -0.44, 0]" receive-shadow>
