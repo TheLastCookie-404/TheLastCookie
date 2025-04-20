@@ -6,7 +6,6 @@ export default defineNuxtConfig({
   tres: { devtools: true },
   modules: [
     "@nuxt/eslint",
-    "@pinia/nuxt",
     "@formkit/auto-animate",
     "@nuxt/icon",
     "@nuxt/fonts",
@@ -15,7 +14,6 @@ export default defineNuxtConfig({
     "@tresjs/nuxt",
     "@nuxthub/core",
   ],
-  alias: { pinia: "/node_modules/@pinia/nuxt/node_modules/pinia/dist/pinia.mjs" },
   vite: {
     plugins: [tailwindcss()],
   },
