@@ -15,11 +15,6 @@ export default defineNuxtConfig({
     "@tresjs/nuxt",
     "@nuxthub/core",
   ],
-  nitro: {
-    alias: {
-      pinia: "pinia",
-    },
-  },
   vite: {
     plugins: [tailwindcss()],
   },
