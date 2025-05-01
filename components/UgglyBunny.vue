@@ -14,7 +14,5 @@
 
   const currentAction = ref(actions.Greeting);
 
-  onBeforeMount(() => {
-    currentAction.value.play();
-  });
+  currentAction.value.play();
 </script>

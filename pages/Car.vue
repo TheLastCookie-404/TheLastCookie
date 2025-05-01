@@ -4,7 +4,7 @@
       <TresPerspectiveCamera :position="[2, 2, 2]" :look-at="[0, 0, 0]" />
       <OrbitControls />
       <Suspense>
-        <Turtle :position="[0, -0.2, 0]" />
+        <Car :scale="0.005" />
       </Suspense>
       <TresMesh :position="[0, -0.44, 0]" receive-shadow>
         <TresBoxGeometry :args="[20, 0.5, 20]" />

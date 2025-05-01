@@ -7,9 +7,7 @@
 
   const { scene: model } = await useGLTF("/models/turtle/source/turtle-output.gltf");
 
-  onBeforeMount(() => {
-    model.traverse((child) => {
-      if (child.isObject3D) child.castShadow = true;
-    });
+  model.traverse((child) => {
+    if (child.isObject3D) child.castShadow = true;
   });
 </script>
