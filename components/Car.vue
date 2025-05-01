@@ -11,11 +11,9 @@
 
   const currentAction = ref(actions["Car engine"]);
 
-  onBeforeMount(() => {
-    model.traverse((child) => {
-      if (child.isObject3D) child.castShadow = true;
-    });
-
-    currentAction.value.play();
+  model.traverse((child) => {
+    if (child.isObject3D) child.castShadow = true;
   });
+
+  currentAction.value.play();
 </script>
