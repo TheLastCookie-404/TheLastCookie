@@ -7,10 +7,10 @@
         <!-- <Car :scale="0.005" /> -->
         <Turtle :position="[0, -0.2, 0]" />
       </Suspense>
-      <TresMesh :position="[0, 3, 0]" :rotation="[0, Math.PI, 0]" cast-shadow>
-        <!-- <TresConeGeometry :args="[1, 1.5, 3]" /> -->
+      <!-- <TresMesh :position="[0, 3, 0]" :rotation="[0, Math.PI, 0]">
+        <TresConeGeometry :args="[1, 1.5, 3]" />
         <TresMeshToonMaterial color="#82DBC5" />
-      </TresMesh>
+      </TresMesh> -->
       <TresMesh :position="[0, -0.44, 0]" receive-shadow>
         <TresBoxGeometry :args="[4, 0.5, 4]" />
         <TresMeshToonMaterial color="#4F4F4F" />
