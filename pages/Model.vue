@@ -12,7 +12,7 @@
         <TresMeshToonMaterial color="#82DBC5" />
       </TresMesh> -->
       <TresMesh :position="[0, -0.44, 0]" receive-shadow>
-        <TresBoxGeometry :args="[4, 0.5, 4]" />
+        <TresBoxGeometry :args="[20, 0.5, 20]" />
         <TresMeshToonMaterial color="#4F4F4F" />
       </TresMesh>
       <TresDirectionalLight color="#ffffbb" :position="[3, 3, 3]" :intensity="2" cast-shadow />
@@ -22,15 +22,10 @@
 </template>
 
 <script setup lang="ts">
-  import { BasicShadowMap, SRGBColorSpace, NoToneMapping } from "three";
-
   const gl = {
     clearColor: "#25252f",
     shadows: true,
     alpha: false,
-    shadowMapType: BasicShadowMap,
-    outputColorSpace: SRGBColorSpace,
-    toneMapping: NoToneMapping,
     windowSize: false,
   };
 </script>
