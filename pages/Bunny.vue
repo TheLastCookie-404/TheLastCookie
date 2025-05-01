@@ -1,6 +1,6 @@
 <template>
   <div class="h-[80vh]">
-    <TresCanvas v-bind="gl">
+    <TresCanvas clear-color="#F78B3D">
       <TresPerspectiveCamera :position="[2, 2, 9]" :look-at="[0, 2, 0]" />
       <OrbitControls />
       <Suspense>
@@ -12,16 +12,4 @@
   </div>
 </template>
 
-<script setup>
-  import { BasicShadowMap, SRGBColorSpace, NoToneMapping } from "three";
-
-  const gl = {
-    clearColor: "#F78B3D",
-    shadows: true,
-    alpha: false,
-    shadowMapType: BasicShadowMap,
-    outputColorSpace: SRGBColorSpace,
-    toneMapping: NoToneMapping,
-    windowSize: false,
-  };
-</script>
+<script setup></script>
