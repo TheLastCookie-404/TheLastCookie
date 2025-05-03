@@ -1,7 +1,7 @@
 <template>
   <div class="h-[80vh]">
     <TresCanvas preset="realistic" :tone-mapping-exposure="1">
-      <TresPerspectiveCamera :position="[2, 2, 2]" :look-at="[0, 0, 0]" />
+      <TresPerspectiveCamera :position="[0, 2, 3]" :look-at="[0, 0, 0]" />
       <OrbitControls />
       <Suspense>
         <Turtle :position="[0, -0.2, 0]" />
