@@ -5,7 +5,7 @@
 <script setup lang="ts">
   import { useGLTF } from "@tresjs/cientos";
 
-  const { scene: model } = await useGLTF("/models/turtle/source/turtle-output.gltf");
+  const { scene: model } = await useGLTF("/models/turtle/source/TheLastCookie.gltf");
 
   model.traverse((child) => {
     if (child.isObject3D) child.castShadow = true;
