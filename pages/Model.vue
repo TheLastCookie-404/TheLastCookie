@@ -20,8 +20,6 @@
 </template>
 
 <script setup lang="ts">
-  import Cookie from "~/components/Cookie.vue";
-
   definePageMeta({
     layout: "model",
   });

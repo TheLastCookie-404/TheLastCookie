@@ -10,7 +10,7 @@
             <a class="link" href="https://sketchfab.com/514OnKoishi">LunaR</a>
           </span>
           <br />
-          This is site for fun, by TheLastCookie-404
+          Made for fun, by TheLastCookie-404
         </p>
       </aside>
     </Footer>
