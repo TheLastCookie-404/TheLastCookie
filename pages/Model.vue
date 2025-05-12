@@ -13,9 +13,9 @@
           :scale="0.25"
           :rotate-y="3" />
       </Suspense>
-      <Suspense>
+      <!-- <Suspense>
         <Model src="/models/paimon/scene.gltf" :position="[0, 2, 0]" :scale="0.005" />
-      </Suspense>
+      </Suspense> -->
       <TresMesh :position="[0, -0.44, 0]" receive-shadow>
         <TresBoxGeometry :args="[20, 0.5, 20]" />
         <TresMeshToonMaterial color="#4F4F4F" />
