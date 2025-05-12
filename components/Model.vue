@@ -3,15 +3,30 @@
 </template>
 
 <script setup lang="ts">
-  import { useGLTF } from "@tresjs/cientos";
+  import { useGLTF, useAnimations } from "@tresjs/cientos";
 
-  const props = defineProps<{
-    src: string;
-  }>();
+  const props = withDefaults(
+    defineProps<{
+      src: string;
+      castShadow?: boolean;
+      animation?: string | "none";
+    }>(),
+    {
+      castShadow: true,
+      animation: "none",
+    },
+  );
 
-  const { scene: model } = await useGLTF(props.src);
+  const { scene: model, animations } = await useGLTF(props.src);
+  const { actions } = useAnimations(animations, model);
 
   model.traverse((child) => {
-    if (child.isObject3D) child.castShadow = true;
+    if (child.isObject3D) child.castShadow = props.castShadow;
   });
+
+  if (props.animation !== "none") {
+    actions[props.animation].play();
+  }
+
+  // currentAction.value.play();
 </script>
