@@ -5,7 +5,11 @@
 <script setup lang="ts">
   import { useGLTF } from "@tresjs/cientos";
 
-  const { scene: model } = await useGLTF("/models/cookie/CookieBite.glb");
+  const props = defineProps<{
+    src: string;
+  }>();
+
+  const { scene: model } = await useGLTF(props.src);
 
   model.traverse((child) => {
     if (child.isObject3D) child.castShadow = true;
