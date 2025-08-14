@@ -21,4 +21,13 @@ export default defineNuxtConfig({
   typescript: {
     typeCheck: true,
   },
+  hooks: {
+    "pages:extend"(pages) {
+      pages.push({
+        name: "model",
+        path: "/model",
+        file: "~/pages/index.vue",
+      });
+    },
+  },
 });

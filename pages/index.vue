@@ -1,26 +1,33 @@
 <template>
   <div class="h-[80vh]">
-    <TresCanvas clear-color="#82DBC5">
-      <TresPerspectiveCamera :position="[9, 9, 9]" />
+    <TresCanvas preset="realistic" :tone-mapping-exposure="1">
+      <TresPerspectiveCamera :position="[-0.6, 1.3, 3.5]" :look-at="[0, 0, 0]" />
       <OrbitControls />
-      <TresMesh :position="[-2, 2, 0]" :rotation="[0, Math.PI, 0]">
-        <TresConeGeometry :args="[1, 1.5, 3]" />
-        <TresMeshToonMaterial color="#82DBC5" />
-      </TresMesh>
-      <TresMesh :position="[0, 0, 0]" cast-shadow>
-        <TresBoxGeometry :args="[1.5, 1.5, 1.5]" />
+      <Suspense>
+        <Model src="/models/turtle/source/TheLastCookie.gltf" :position="[0, -0.2, 0]" />
+      </Suspense>
+      <Suspense>
+        <Model
+          src="/models/cookie/CookieBite.glb"
+          :position="[0, -0.2, 1.5]"
+          :scale="0.25"
+          :rotate-y="3" />
+      </Suspense>
+      <!-- <Suspense>
+        <Model src="/models/paimon/scene.gltf" :position="[0, 2, 0]" :scale="0.005" />
+      </Suspense> -->
+      <TresMesh :position="[0, -0.44, 0]" receive-shadow>
+        <TresBoxGeometry :args="[20, 0.5, 20]" />
         <TresMeshToonMaterial color="#4F4F4F" />
       </TresMesh>
-      <TresMesh :position="[2, -2, 0]">
-        <TresSphereGeometry />
-        <TresMeshToonMaterial color="#FBB03B" />
-      </TresMesh>
-      <TresDirectionalLight :position="[0, 2, 4]" :intensity="1.2" cast-shadow />
+      <TresDirectionalLight color="#ffffbb" :position="[3, 3, 3]" :intensity="2" cast-shadow />
+      <TresAmbientLight :intensity="1" />
     </TresCanvas>
   </div>
 </template>
 
 <script setup lang="ts">
-  // import { TresCanvas } from "@tresjs/core";
-  // import { OrbitControls } from "@tresjs/cientos";
+  definePageMeta({
+    layout: "model",
+  });
 </script>
