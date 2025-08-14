@@ -13,6 +13,13 @@
           :scale="0.25"
           :rotate-y="3" />
       </Suspense>
+      <Suspense>
+        <Model
+          src="/models/pearto/scene.gltf"
+          :rotation="[0, 0.7, 0]"
+          :scale="0.1"
+          :position="[0, -3, 0]" />
+      </Suspense>
       <!-- <Suspense>
         <Model src="/models/paimon/scene.gltf" :position="[0, 2, 0]" :scale="0.005" />
       </Suspense> -->
