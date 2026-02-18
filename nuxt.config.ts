@@ -11,4 +11,7 @@ export default defineNuxtConfig({
 
   css: ["~/assets/main.css"],
   modules: ["@nuxt/icon", "@nuxt/eslint", "@tresjs/nuxt"],
+  runtimeConfig: {
+    githubSecret: process.env["GITHUB_SECRET"],
+  },
 });
