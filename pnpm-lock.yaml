@@ -8,12 +8,21 @@ importers:
 
   .:
     dependencies:
+      '@tresjs/cientos':
+        specifier: ^5.4.0
+        version: 5.4.0(@tresjs/core@5.5.0(three@0.182.0)(vue@3.5.28(typescript@5.9.3)))(@types/three@0.182.0)(three@0.182.0)(vue@3.5.28(typescript@5.9.3))
+      '@tresjs/post-processing':
+        specifier: ^3.4.0
+        version: 3.4.0(@tresjs/core@5.5.0(three@0.182.0)(vue@3.5.28(typescript@5.9.3)))(three@0.182.0)(vue@3.5.28(typescript@5.9.3))
       daisyui:
         specifier: ^5.5.18
         version: 5.5.18
       nuxt:
         specifier: ^4.3.1
         version: 4.3.1(@parcel/watcher@2.5.6)(@types/node@25.2.3)(@vue/compiler-sfc@3.5.28)(cac@6.7.14)(db0@0.3.4)(eslint@9.39.2(jiti@2.6.1))(ioredis@5.9.3)(lightningcss@1.30.2)(magicast@0.5.2)(optionator@0.9.4)(rollup@4.57.1)(terser@5.46.0)(typescript@5.9.3)(vite@7.3.1(@types/node@25.2.3)(jiti@2.6.1)(lightningcss@1.30.2)(terser@5.46.0)(yaml@2.8.2))(vue-tsc@3.2.4(typescript@5.9.3))(yaml@2.8.2)
+      three:
+        specifier: ^0.182.0
+        version: 0.182.0
       vue:
         specifier: ^3.5.28
         version: 3.5.28(typescript@5.9.3)
@@ -30,12 +39,9 @@ importers:
       '@tailwindcss/vite':
         specifier: ^4.1.18
         version: 4.1.18(vite@7.3.1(@types/node@25.2.3)(jiti@2.6.1)(lightningcss@1.30.2)(terser@5.46.0)(yaml@2.8.2))
-      '@tresjs/cientos':
-        specifier: ^5.3.1
-        version: 5.3.1(@tresjs/core@5.4.1(three@0.182.0)(vue@3.5.28(typescript@5.9.3)))(@types/three@0.182.0)(three@0.182.0)(vue@3.5.28(typescript@5.9.3))
       '@tresjs/nuxt':
-        specifier: ^5.2.1
-        version: 5.2.1(@rollup/pluginutils@5.3.0(rollup@4.57.1))(@tiptap/extensions@3.19.0(@tiptap/core@3.19.0(@tiptap/pm@3.19.0))(@tiptap/pm@3.19.0))(@tiptap/y-tiptap@3.0.2(prosemirror-model@1.25.4)(prosemirror-state@1.4.4)(prosemirror-view@1.41.6)(y-protocols@1.0.7(yjs@13.6.29))(yjs@13.6.29))(change-case@5.4.4)(db0@0.3.4)(embla-carousel@8.6.0)(esbuild@0.27.3)(ioredis@5.9.3)(magicast@0.5.2)(tailwindcss@4.1.18)(three@0.182.0)(typescript@5.9.3)(vite@7.3.1(@types/node@25.2.3)(jiti@2.6.1)(lightningcss@1.30.2)(terser@5.46.0)(yaml@2.8.2))(vue-router@4.6.4(vue@3.5.28(typescript@5.9.3)))(vue@3.5.28(typescript@5.9.3))(yjs@13.6.29)
+        specifier: ^5.3.0
+        version: 5.3.0(@rollup/pluginutils@5.3.0(rollup@4.57.1))(@tiptap/extensions@3.19.0(@tiptap/core@3.19.0(@tiptap/pm@3.19.0))(@tiptap/pm@3.19.0))(@tiptap/y-tiptap@3.0.2(prosemirror-model@1.25.4)(prosemirror-state@1.4.4)(prosemirror-view@1.41.6)(y-protocols@1.0.7(yjs@13.6.29))(yjs@13.6.29))(change-case@5.4.4)(db0@0.3.4)(embla-carousel@8.6.0)(esbuild@0.27.3)(ioredis@5.9.3)(magicast@0.5.2)(tailwindcss@4.1.18)(three@0.182.0)(typescript@5.9.3)(vite@7.3.1(@types/node@25.2.3)(jiti@2.6.1)(lightningcss@1.30.2)(terser@5.46.0)(yaml@2.8.2))(vue-router@4.6.4(vue@3.5.28(typescript@5.9.3)))(vue@3.5.28(typescript@5.9.3))(yjs@13.6.29)
       '@types/node':
         specifier: ^25.2.3
         version: 25.2.3
@@ -1941,23 +1947,30 @@ packages:
       y-protocols: ^1.0.1
       yjs: ^13.5.38
 
-  '@tresjs/cientos@5.3.1':
-    resolution: {integrity: sha512-RnbPVIoqRms9FjROcmd+jKxeejhGfpKUAmc+fmS8kmtMSAeWZ8ZEGnTTbRgOyG3N+udO2t07uIKsHccxiMoN7Q==}
+  '@tresjs/cientos@5.4.0':
+    resolution: {integrity: sha512-JDyQFgs+YZrZU2gH2geeP5/N1YsQ6kMPZGERNMeh5lgyuXhJuzgw2K+gukGKKL6uX9+p+9dkYn6y0sysHnYF1w==}
     peerDependencies:
-      '@tresjs/core': 5.4.1
+      '@tresjs/core': 5.5.0
       three: '>=0.133'
       vue: '>=3.5.17'
 
-  '@tresjs/core@5.4.1':
-    resolution: {integrity: sha512-oOiU5I203sAK9UzDyjDalWXZtfY5FJ9TYoy3xav7q9j67noBo8QRuHwDO62kopLkys1DzrT2a0nF1y8pnIzhYQ==}
+  '@tresjs/core@5.5.0':
+    resolution: {integrity: sha512-wIHwPYWeBXO1LdDVRHPAt0YLjvqm8JYb6uliOkzLyWzHqVNVZ0qQjipGPT72mV87uQFUiIHF8EY8L2jiWxuUFw==}
     peerDependencies:
       three: '>=0.133'
       vue: '>=3.4'
 
-  '@tresjs/nuxt@5.2.1':
-    resolution: {integrity: sha512-8kOMpC5XCmjmLMS6KtANPgTO3tuREOYY/opfCTpletfpOWkXvro9V7+BKnW918rfFhVYtqjvJkSXscp9OgIpqw==}
+  '@tresjs/nuxt@5.3.0':
+    resolution: {integrity: sha512-i2NmfUj9gXVqUkzPMz589X9M3aAtogDNyM56hWLBM2KLNhMIFc7RSZ1y24trsU0jyYzDyd1oZWfn/ZQ1SehLxA==}
     peerDependencies:
       three: '>=0.133'
+
+  '@tresjs/post-processing@3.4.0':
+    resolution: {integrity: sha512-sWis5h/s0pquZHWFc9boU/SrPhM31uz+wnSf1Lm2PBxqo6WRkCG+HFbEA+fUtAEEAXHrTBcL6du3gnBhwu8IIw==}
+    peerDependencies:
+      '@tresjs/core': 5.5.0
+      three: '>=0.169'
+      vue: '>=3.4'
 
   '@tweenjs/tween.js@23.1.3':
     resolution: {integrity: sha512-vJmvvwFxYuGnF2axRtPYocag6Clbb5YS7kLL+SO/TeVFzHqDIWrNKYtcsPMibjDx9O+bu+psAy9NKfWklassUA==}
@@ -4308,6 +4321,11 @@ packages:
     resolution: {integrity: sha512-3Ybi1tAuwAP9s0r1UQ2J4n5Y0G05bJkpUIO0/bI9MhwmD70S5aTWbXGBwxHrelT+XM1k6dM0pk+SwNkpTRN7Pg==}
     engines: {node: ^10 || ^12 || >=14}
 
+  postprocessing@6.38.2:
+    resolution: {integrity: sha512-7DwuT7Tkst41ZjSj287g7C9c5/D3Xx5rMgBosg0dadbUPoZD2HNzkadKPol1d2PJAoI9f+Jeh1/v9YfLzpFGVw==}
+    peerDependencies:
+      three: '>= 0.157.0 < 0.183.0'
+
   potpack@1.0.2:
     resolution: {integrity: sha512-choctRBIV9EMT9WGAZHn3V7t0Z2pMQyl0EZE6pFc/6ml3ssw7Dlf/oAOvFwjm1HVsqfQN8GfeFyJ+d8tRzqueQ==}
 
@@ -4864,6 +4882,11 @@ packages:
         optional: true
       react:
         optional: true
+
+  three-mesh-bvh@0.9.8:
+    resolution: {integrity: sha512-YphYvdXEZSXdz6iNdWJo1RB6qvSCRyiXPEVSvNU6xVWbLDOdSrfEIsJOpgFOnefdmVEvZ6M+sY0cjh9gl7MvdA==}
+    peerDependencies:
+      three: '>= 0.159.0'
 
   three-stdlib@2.36.1:
     resolution: {integrity: sha512-XyGQrFmNQ5O/IoKm556ftwKsBg11TIb301MB5dWNicziQBEs2g3gtOYIf7pFiLa0zI2gUwhtCjv9fmjnxKZ1Cg==}
@@ -7358,15 +7381,16 @@ snapshots:
       y-protocols: 1.0.7(yjs@13.6.29)
       yjs: 13.6.29
 
-  '@tresjs/cientos@5.3.1(@tresjs/core@5.4.1(three@0.182.0)(vue@3.5.28(typescript@5.9.3)))(@types/three@0.182.0)(three@0.182.0)(vue@3.5.28(typescript@5.9.3))':
+  '@tresjs/cientos@5.4.0(@tresjs/core@5.5.0(three@0.182.0)(vue@3.5.28(typescript@5.9.3)))(@types/three@0.182.0)(three@0.182.0)(vue@3.5.28(typescript@5.9.3))':
     dependencies:
-      '@tresjs/core': 5.4.1(three@0.182.0)(vue@3.5.28(typescript@5.9.3))
+      '@tresjs/core': 5.5.0(three@0.182.0)(vue@3.5.28(typescript@5.9.3))
       '@vueuse/core': 13.9.0(vue@3.5.28(typescript@5.9.3))
       camera-controls: 2.10.1(three@0.182.0)
       stats-gl: 2.4.2(@types/three@0.182.0)(three@0.182.0)
       stats.js: 0.17.0
       three: 0.182.0
       three-custom-shader-material: 5.4.0(three@0.182.0)
+      three-mesh-bvh: 0.9.8(three@0.182.0)
       three-stdlib: 2.36.1(three@0.182.0)
       vue: 3.5.28(typescript@5.9.3)
     transitivePeerDependencies:
@@ -7374,7 +7398,7 @@ snapshots:
       - '@types/three'
       - react
 
-  '@tresjs/core@5.4.1(three@0.182.0)(vue@3.5.28(typescript@5.9.3))':
+  '@tresjs/core@5.5.0(three@0.182.0)(vue@3.5.28(typescript@5.9.3))':
     dependencies:
       '@pmndrs/pointer-events': 6.6.29
       '@vue/devtools-api': 7.7.9
@@ -7383,11 +7407,11 @@ snapshots:
       three: 0.182.0
       vue: 3.5.28(typescript@5.9.3)
 
-  '@tresjs/nuxt@5.2.1(@rollup/pluginutils@5.3.0(rollup@4.57.1))(@tiptap/extensions@3.19.0(@tiptap/core@3.19.0(@tiptap/pm@3.19.0))(@tiptap/pm@3.19.0))(@tiptap/y-tiptap@3.0.2(prosemirror-model@1.25.4)(prosemirror-state@1.4.4)(prosemirror-view@1.41.6)(y-protocols@1.0.7(yjs@13.6.29))(yjs@13.6.29))(change-case@5.4.4)(db0@0.3.4)(embla-carousel@8.6.0)(esbuild@0.27.3)(ioredis@5.9.3)(magicast@0.5.2)(tailwindcss@4.1.18)(three@0.182.0)(typescript@5.9.3)(vite@7.3.1(@types/node@25.2.3)(jiti@2.6.1)(lightningcss@1.30.2)(terser@5.46.0)(yaml@2.8.2))(vue-router@4.6.4(vue@3.5.28(typescript@5.9.3)))(vue@3.5.28(typescript@5.9.3))(yjs@13.6.29)':
+  '@tresjs/nuxt@5.3.0(@rollup/pluginutils@5.3.0(rollup@4.57.1))(@tiptap/extensions@3.19.0(@tiptap/core@3.19.0(@tiptap/pm@3.19.0))(@tiptap/pm@3.19.0))(@tiptap/y-tiptap@3.0.2(prosemirror-model@1.25.4)(prosemirror-state@1.4.4)(prosemirror-view@1.41.6)(y-protocols@1.0.7(yjs@13.6.29))(yjs@13.6.29))(change-case@5.4.4)(db0@0.3.4)(embla-carousel@8.6.0)(esbuild@0.27.3)(ioredis@5.9.3)(magicast@0.5.2)(tailwindcss@4.1.18)(three@0.182.0)(typescript@5.9.3)(vite@7.3.1(@types/node@25.2.3)(jiti@2.6.1)(lightningcss@1.30.2)(terser@5.46.0)(yaml@2.8.2))(vue-router@4.6.4(vue@3.5.28(typescript@5.9.3)))(vue@3.5.28(typescript@5.9.3))(yjs@13.6.29)':
     dependencies:
       '@nuxt/kit': 4.1.2(magicast@0.5.2)
       '@nuxt/ui': 4.4.0(@tiptap/extensions@3.19.0(@tiptap/core@3.19.0(@tiptap/pm@3.19.0))(@tiptap/pm@3.19.0))(@tiptap/y-tiptap@3.0.2(prosemirror-model@1.25.4)(prosemirror-state@1.4.4)(prosemirror-view@1.41.6)(y-protocols@1.0.7(yjs@13.6.29))(yjs@13.6.29))(change-case@5.4.4)(db0@0.3.4)(embla-carousel@8.6.0)(ioredis@5.9.3)(magicast@0.5.2)(tailwindcss@4.1.18)(typescript@5.9.3)(vite@7.3.1(@types/node@25.2.3)(jiti@2.6.1)(lightningcss@1.30.2)(terser@5.46.0)(yaml@2.8.2))(vue-router@4.6.4(vue@3.5.28(typescript@5.9.3)))(vue@3.5.28(typescript@5.9.3))(yjs@13.6.29)
-      '@tresjs/core': 5.4.1(three@0.182.0)(vue@3.5.28(typescript@5.9.3))
+      '@tresjs/core': 5.5.0(three@0.182.0)(vue@3.5.28(typescript@5.9.3))
       defu: 6.1.4
       mlly: 1.8.0
       ohash: 2.0.11
@@ -7448,6 +7472,14 @@ snapshots:
       - yjs
       - yup
       - zod
+
+  '@tresjs/post-processing@3.4.0(@tresjs/core@5.5.0(three@0.182.0)(vue@3.5.28(typescript@5.9.3)))(three@0.182.0)(vue@3.5.28(typescript@5.9.3))':
+    dependencies:
+      '@tresjs/core': 5.5.0(three@0.182.0)(vue@3.5.28(typescript@5.9.3))
+      '@vueuse/core': 13.9.0(vue@3.5.28(typescript@5.9.3))
+      postprocessing: 6.38.2(three@0.182.0)
+      three: 0.182.0
+      vue: 3.5.28(typescript@5.9.3)
 
   '@tweenjs/tween.js@23.1.3': {}
 
@@ -10085,6 +10117,10 @@ snapshots:
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
+  postprocessing@6.38.2(three@0.182.0):
+    dependencies:
+      three: 0.182.0
+
   potpack@1.0.2: {}
 
   prelude-ls@1.2.1: {}
@@ -10637,6 +10673,10 @@ snapshots:
       glsl-token-string: 1.0.1
       glsl-tokenizer: 2.1.5
       object-hash: 3.0.0
+      three: 0.182.0
+
+  three-mesh-bvh@0.9.8(three@0.182.0):
+    dependencies:
       three: 0.182.0
 
   three-stdlib@2.36.1(three@0.182.0):

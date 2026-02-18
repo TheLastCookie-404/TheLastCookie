@@ -18,6 +18,28 @@
 
 <script setup>
   const year = ref(2024);
+  const filler = [
+    {
+      date: "2024-01-01",
+      intensity: "0",
+      count: 0,
+    },
+    {
+      date: "2024-01-02",
+      intensity: "0",
+      count: 0,
+    },
+    {
+      date: "2024-01-03",
+      intensity: "0",
+      count: 0,
+    },
+    {
+      date: "2024-01-04",
+      intensity: "0",
+      count: 0,
+    },
+  ];
 
   const url = computed(
     () => `https://gh-calendar.rschristian.dev/user/TheLastCookie-404?year=${year.value}`,
